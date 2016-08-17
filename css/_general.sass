@@ -1,0 +1,38 @@
+body
+  background-color: $red
+.nav-wrapper
+  background-color: #7e57c2
+.main
+  //estilos del articule
+  article
+    //estilos del articule
+    h2
+      color: #1a237e
+    p
+      font-family: $font-principal
+      font-weight: bold
+      font-size: 120%
+      text-align: justify
+      color: #1a237e
+      background-color: #304ffe
+
+@keyframes slideLeft
+  0%
+    transform: translateX(150%)
+  50%
+    transform: translateX(-50%)
+  65%
+    transform: translateX(25%)
+  80%
+    transform: translateX(-25%)
+  100%
+    transform: translateX(0%)
+
+#rollo
+  width: 75px
+  height: 75px
+  position: absolute
+  bottom: 0%
+  right: 2%
+  animation: slideLeft 9.0s ease-in-out infinite
+  animation-delay: 1s
